@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.library.libraryclient.controller.RegisterController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label text="Register New Account" styleClass="header-label"/>
+    <TextField fx:id="usernameField" promptText="Username"/>
+    <TextField fx:id="emailField" promptText="Email"/>
+    <PasswordField fx:id="passwordField" promptText="Password"/>
+    <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password"/>
+    <HBox spacing="10">
+        <Button text="Register" onAction="#handleRegister"/>
+        <Button text="Back to Login" onAction="#goToLogin"/>
+    </HBox>
+</VBox>

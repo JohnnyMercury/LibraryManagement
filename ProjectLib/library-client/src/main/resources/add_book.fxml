@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.library.libraryclient.controller.AddBookController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label text="Add New Book" styleClass="header-label"/>
+    <TextField fx:id="titleField" promptText="Title"/>
+    <TextField fx:id="authorField" promptText="Author"/>
+    <TextField fx:id="isbnField" promptText="ISBN"/>
+    <TextField fx:id="copiesField" promptText="Available Copies"/>
+    <HBox spacing="10">
+        <Button text="Add" onAction="#handleAdd"/>
+        <Button text="Cancel" onAction="#handleCancel"/>
+    </HBox>
+</VBox>

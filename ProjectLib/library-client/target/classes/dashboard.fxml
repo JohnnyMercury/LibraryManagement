@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.library.libraryclient.controller.DashboardController">
+    <top>
+        <HBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <TextField fx:id="searchField" promptText="Search Books"/>
+            <Button text="Search" onAction="#handleSearch"/>
+        </HBox>
+    </top>
+    <center>
+        <TableView fx:id="booksTable" prefHeight="400" prefWidth="600">
+            <columns>
+                <TableColumn fx:id="titleColumn" text="Title" prefWidth="150"/>
+                <TableColumn fx:id="authorColumn" text="Author" prefWidth="150"/>
+                <TableColumn fx:id="isbnColumn" text="ISBN" prefWidth="150"/>
+                <TableColumn fx:id="copiesColumn" text="Available Copies" prefWidth="150"/>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Button text="Add Book" onAction="#handleAddBook"/>
+            <Button text="Delete Book" onAction="#handleDeleteBook"/>
+            <Button text="Refresh" onAction="#refreshBooks"/>
+            <Button text="Logout" onAction="#handleLogout"/>
+        </HBox>
+    </bottom>
+</BorderPane>
