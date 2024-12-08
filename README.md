@@ -33,14 +33,13 @@ A comprehensive Library Management System consisting of a Spring Boot server and
   - Add new books
   - View all books
   - Search books by title
-  - Delete books (Admin only)
+  - Delete books
 - **Transaction Management**
   - Borrow books
   - Return books
   - View user-specific transaction history
 - **Role-Based Access Control**
   - Regular users can borrow and return books
-  - Admin users can manage books and view all transactions
 - **Secure Password Storage**
   - Passwords are hashed using BCrypt
 - **Interactive Client Interface**
@@ -210,7 +209,7 @@ After starting the server:
 
 ### Book Endpoints
 
-- **Add Book** *(Admin Only)*
+- **Add Book** 
 
   ```http
   POST /books/add
@@ -239,7 +238,7 @@ After starting the server:
   GET /books/search?title=Java
   ```
 
-- **Delete Book** *(Admin Only)*
+- **Delete Book** 
 
   ```http
   DELETE /books/delete/{bookId}
