@@ -343,17 +343,3 @@ Contributions are welcome! Please follow these steps:
    ```bash
    git push origin feature/YourFeature
    ```
-
-5. **Open a Pull Request**
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-For any questions or support, please contact [your.email@example.com](mailto:your.email@example.com).
-
----
-
-*Happy Coding!*
